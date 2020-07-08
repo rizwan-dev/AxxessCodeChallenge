@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    app:ignore="NamespaceTypo">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.axxess.codechallenge.util.GalleryView" />
+    </data>
+
+
+    <RelativeLayout
+        android:id="@+id/row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_10">
+
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/img"
+            android:layout_width="@dimen/dimen_130"
+            android:layout_height="@dimen/dimen_130"
+            app:imageURL="@{model.imgUrl}"
+            />
+
+
+        <TextView
+            android:id="@+id/news_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dimen_10"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:text="@{model.title}"
+            android:textSize="@dimen/dimen_16" />
+
+
+    </RelativeLayout>
+
+</layout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AxxessCodeChallenge</string>
+    <string name="details_view">DetailsView</string>
+    <string name="gallery">Search Gallery</string>
+</resources>
